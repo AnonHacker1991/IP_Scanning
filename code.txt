@@ -1,0 +1,41 @@
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn.model_selection import cross_val_score
+
+# Load your dataset
+try:
+    df = pd.read_csv('/Users/Divik/Desktop/datasets11.csv')
+    print("Dataset loaded successfully.")
+except Exception as e:
+    print("Error loading dataset:", e)
+
+# Assuming 'target_column' is your target variable
+X = df.drop(['Source', 'Destination'], axis=1, errors='ignore')  # Dropping 'Source' and 'Destination'
+y = df['Source']  # Using 'Source' as the target column
+
+# Convert to numeric and fill NaNs if necessary
+X = X.select_dtypes(include=['number']).fillna(0)
+
+print("Shape of X after preprocessing:", X.shape)  # Debugging print statement
+
+# Perform feature selection
+selector = SelectKBest(score_func=f_classif, k='all')  # Setting k='all'
+X_selected = selector.fit_transform(X, y)
+
+# Get the selected feature names
+selected_features = X.columns[selector.get_support()]
+
+print("Selected features:", selected_features)  # Debugging print statement
+
+# Define the Random Forest classifier
+rf_classifier = RandomForestClassifier()
+
+# Train the classifier using the selected features
+rf_classifier.fit(X_selected, y)
+
+# Evaluate the model using cross-validation
+scores = cross_val_score(rf_classifier, X_selected, y, cv=5)
+
+# Print the mean accuracy across folds
+print("Mean Accuracy:", scores.mean())
