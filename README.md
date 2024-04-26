@@ -1,6 +1,6 @@
 Research Paper: https://www.researchgate.net/publication/272853642
 
-Requirements:
+**Requirements:**
 Must have Python 3.11.x version.
 Must install following dependancies.
  - Pandas : pip install pandas
