@@ -31,7 +31,8 @@ But you can generate your dataset as well. The dataset is just a collection of t
     - SVM
     - KNN: KNeighbors
     - Naive Bayes
+    
 We have used these ML algorithms to compare our results and see the accuracy.
-
-
+These are prebuilt in Python. We need to import libraries and use them.
+We just need to train and test the model.
 
