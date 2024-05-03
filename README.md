@@ -12,6 +12,8 @@ You must install the following dependencies.
  - seaborn: pip install seaborn
  - NumPy: pip install numpy
 
+pip install -r requrinments.txt
+
 Once you have all the required dependencies, you can find the code in this repository and run your environment.
 
 I used a VS code to run this, where I installed the Python and Jupiter Notebook extensions.
