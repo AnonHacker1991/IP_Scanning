@@ -41,7 +41,6 @@ We just need to train and test the model.
 Contributions to this project are welcome. Please fork the repository and submit a pull request with your improvements.
 
 **Acknowledgments**
-
-    Thanks to anyone whose code was used as inspiration.
-    Special thanks to the maintainers of the datasets and tools used in this project.
+Thanks to anyone whose code was used as inspiration.
+Special thanks to the maintainers of the datasets and tools used in this project.
 
