@@ -37,3 +37,11 @@ We have used these ML algorithms to compare our results and see the accuracy.
 These are prebuilt in Python. We need to import libraries and use them.
 We just need to train and test the model.
 
+**Contributing:** 
+Contributions to this project are welcome. Please fork the repository and submit a pull request with your improvements.
+
+**Acknowledgments**
+
+    Thanks to anyone whose code was used as inspiration.
+    Special thanks to the maintainers of the datasets and tools used in this project.
+
