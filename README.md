@@ -12,7 +12,7 @@ You must install the following dependencies.
  - seaborn: pip install seaborn
  - NumPy: pip install numpy
 
-pip install -r requrinments.txt
+pip install -r requirements.txt
 
 Once you have all the required dependencies, you can find the code in this repository and run your environment.
 
