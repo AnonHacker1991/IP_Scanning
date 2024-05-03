@@ -1,6 +1,7 @@
 Research Paper: https://www.researchgate.net/publication/272853642
 
-Ip finding code is used to filter traffic using Machine Learning algorithms.
+This repository presents the IP finding code that is used to filter traffic using Machine Learning algorithms.
+In this project, we compared various algorithms to check the accuracy and filter out the better working ones.
 
 **REQUIREMENTS:**
 Must have Python 3.11.x version.
